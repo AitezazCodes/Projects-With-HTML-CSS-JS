@@ -12,8 +12,8 @@ const WINNING_COMBINATIONS = [
     [2,4,6]
 ]
 
-let cellElements = document.querySelectorAll("[data-cell");
-let winMsg = document.querySelector("[data-winning-msg");
+let cellElements = document.querySelectorAll("[data-cell]");
+let winMsg = document.querySelector("[data-winning-msg]");
 let winningElement = document.querySelector(".winning");
 let button = document.getElementById("btn");
 
@@ -23,9 +23,17 @@ button.addEventListener("click", StartGame);
 
 StartGame();
 
-cellElements.forEach(cell => {
-    cell.addEventListener("click", HandleClick, {once : true});
-});
+function StartGame(){
+    circleTurn = false;
+    cellElements.forEach(cell => {
+        cell.classList.remove(X_CLASS);
+        cell.classList.remove(CIRCLE_CLASS);
+        cell.removeEventListener("click", HandleClick);
+
+        cell.addEventListener("click", HandleClick, {once : true});
+    });
+    winningElement.classList.remove("show");
+}
 
 function HandleClick(e){
     const cell = e.target;
@@ -53,23 +61,12 @@ function swapTurns(){
     circleTurn = !circleTurn;
 }
 
-function StartGame(){
-    circleTurn = false;
-    cellElements.forEach(cell => {
-        cell.classList.remove(X_CLASS);
-        cell.classList.remove(CIRCLE_CLASS);
-        cell.removeEventListener("click", HandleClick);
-        cell.addEventListener("click", HandleClick, {once : true});
-    });
-    winningElement.classList.remove("show");
-}
-
 function checkWin(currentClass){
     return WINNING_COMBINATIONS.some(combination => {
         return combination.every(index => {
-            return cellElements[index].classList.contains(currentClass)
-        })
-    })
+            return cellElements[index].classList.contains(currentClass);
+        });
+    });
 }
 
 function endGame(draw){
@@ -84,5 +81,5 @@ function endGame(draw){
 function isDraw(){
     return [...cellElements].every(cell => {
         return cell.classList.contains(X_CLASS) || cell.classList.contains(CIRCLE_CLASS)
-    })
+    });
 }
