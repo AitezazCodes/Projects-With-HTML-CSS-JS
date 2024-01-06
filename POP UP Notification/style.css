@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@500&family=Roboto:wght@500&family=Space+Grotesk&display=swap');
+
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Space Grotesk', sans-serif; */
+
+body{
+    background-color: #546d6e;
+    position: relative;
+    height: 88vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 50%;
+    height: 36.5vh;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    font-family:  'Space Grotesk', sans-serif;
+    font-size: 17px;
+    background-color: rgb(36, 32, 32);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);
+    text-align: justify;
+    /* display: none; */
+}
+
+.content span{
+    color: brown;
+}
+
+.buttons{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#btn{
+    margin: 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    /* display: none; */
+}
+
+.save{
+    background-color: rgb(35, 75, 35);
+}
+
+.save:hover{
+    background-color: rgb(34, 70, 34);
+}
+
+.delete{
+    background-color: rgb(167, 56, 56);
+}
+
+.delete:hover{
+    background-color: rgb(195, 45, 45);
+}
+
+.saved{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: burlywood;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 23px;
+    box-shadow: 4px 4px 5px blanchedalmond;
+    display: none;
+}
+
+.saved i{
+    margin-top: 20px;
+    border: 2px solid rgb(2, 159, 2);
+    border-radius: 50%;
+    padding:9px 10px;
+    color: rgb(2, 159, 2);
+    font-size: 30px;
+}
+
+#done{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+#done:hover{
+    background-color: rgb(40, 38, 38);
+}
+
+.deleted{
+    position:relative;
+    top: 20%;
+    left: 38%;
+    width: 25%;
+    height: 200px;
+    background-color: burlywood;
+    border-radius: 4px;
+    box-shadow: 4px 4px 5px blanchedalmond;
+    display: none;
+}
+
+.deleted span{
+    position: absolute;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.deleted i{
+    position: absolute;
+    font-size: 28px;
+    margin-top: 13px;
+    left: 39%;
+    color: rgb(229, 123, 11);
+}
+
+.deleted p{
+    position: absolute;
+    top: 30%;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#butn{
+    margin: 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    /* display: none; */
+}
+
+.cancel{
+    position: absolute;
+    top: 50%;
+    background-color: black;
+}
+
+.cancel:hover{
+    background-color: rgb(37, 35, 35);
+}
+
+.del{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    background-color: rgb(167, 56, 56);
+}
+
+.del:hover{
+    background-color: rgb(195, 45, 45);
+}
+
+.permanent{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(39, 113, 128);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 23px;
+    box-shadow: 4px 4px 5px rgb(74, 22, 102);
+    display: none;
+}
+
+.permanent i{
+    margin-top: 20px;
+    border: 2px solid rgb(194, 27, 27);
+    border-radius: 50%;
+    padding:9px 10px;
+    color: red;
+    font-size: 30px;
+}
+
+.ok{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+.ok:hover{
+    background-color: rgb(40, 38, 38);
+}
+
+.nothing{
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    top: 1%;
+    left: 25%;
+    display: none;
+}
+
+.nothing h3{
+    position: absolute;
+    top: 2%;
+    color: rgb(205, 92, 26);
+    font-size: 50px;
+    margin-left: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    user-select: none;
+}
+
+.nothing img{
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    user-select: none;
+}
+
+.savedcontent{
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    width: 32%;
+    height: 60%;
+    padding: 15px;
+    font-family:  'Space Grotesk', sans-serif;
+    font-size: 17px;
+    background-color: rgb(43, 149, 113);
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);
+    display: none;   
+    text-align: justify;
+}
+
+
+ /* ************************ CSS for Responsiveness *********************** */
+ @media screen and (min-width: 384px) and (max-width: 554px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #454;
+        position: relative;
+        height: 88vh;
+    }
+
+    .content{
+        width: 90%;
+        height: 60vh;
+        font-size: 15px;
+    }
+    
+    .content span{
+        color: purple;
+    }
+    
+    .buttons{
+        position: absolute;
+        top: 67%;
+        left: 10%;
+    }
+
+    .saved{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .deleted{
+        position:relative;
+        top: 25%;
+        left: 13%;
+        height: 220px;
+        width: 75%;
+        margin-left: none;
+    }
+    
+    .deleted p{
+        font-size: 17px;
+    }
+
+    .deleted i{
+        margin-left: 30px;
+    }
+    
+    #butn{
+        margin: 40px 15px 15px 20px;
+        font-size: 15px;
+    }
+
+    .permanent{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nothing{
+        position: absolute;
+        height: 70%;
+        width: 80%;
+        top: 1%;
+        left: 25%;
+        display: none;
+    }
+    
+    .nothing h3{
+        position: absolute;
+        top: 5%;
+        left: -25%;
+        font-size:35px;
+        margin-left: 1px;
+    }
+    
+    .nothing img{
+        position: absolute;
+        top: 20%;
+        left: -25%;
+    }
+
+    .savedcontent{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 90%;
+        height: 69%;
+        font-size: 17px;
+    }
+}

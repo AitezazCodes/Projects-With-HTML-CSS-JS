@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select{
+    width: 50%;
+    height: 50vh;
+    background-color: transparent;
+}
+
+.select-text{
+    width: 98%;
+    height: 7vh;
+    background-color: rgb(70, 64, 64);
+    margin-left: 1%;
+    margin-top: 1%;
+    cursor: pointer;
+    margin-bottom: 4vh;
+}
+
+.select-text p{
+    padding: 12px 120px;
+}
+
+.apps{
+    background-color: rgb(70, 64, 64);
+    width: 98%;
+    height: 38vh;
+    margin-top: 1%;
+    margin-left: 1%;
+    list-style-type: none;
+}
+
+.app{
+    padding: 21px 125px;
+    cursor: pointer; 
+}
+
+.app:hover{
+    background-color: rgb(48, 45, 45);
+}
+
+.hide{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

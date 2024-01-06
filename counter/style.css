@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #323;
+}
+
+.box{
+    border: 2px solid black;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    height: 60vh;
+}
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+#para{
+    margin: 40px 0 0 0;
+    text-align: center;
+    font-size: 100px;
+}
+
+button{
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(19, 19, 19);
+}
+
+#inc{
+    margin-left: 120px;
+    margin-right: 90px;
+}

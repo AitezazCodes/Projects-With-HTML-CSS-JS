@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <form action="" class="form">
+
+        <div class="name">
+            <label>Enter Name : </label>
+            <input type="text" name="" placeholder="Enter Your Name"  id="write-name" autocomplete="off">
+            <span id="incorrect-name"></span>
+        </div>
+
+        <div class="phone">
+            <label>Enter Phone : </label>
+            <input type="tel" name="" id="write-phone" placeholder="03000000000" autocomplete="off">
+            <span id="incorrect-phone"></span>
+        </div>
+
+        <div class="email">
+            <label>Enter Email : </label>
+            <input type="email" name="" id="write-email" placeholder="abc@email.com" autocomplete="off">
+            <span id="incorrect-email"></span>
+        </div>
+
+        <div class="message">
+            <label>Message : </label><br>
+            <textarea name="" id="write-message" cols="20" rows="5"></textarea>
+            <span id="incorrect-message"></span>
+        </div>
+
+        <div class="submit">
+            <button id="btn">Submit</button>
+            <span id="incorrect-submit"></span>
+        </div>
+
+        <div class="pop-up">
+            <h3>Form Submitted Successfully</h3>
+            <button class="pop-btn">Ok</button>
+        </div>
+
+    </form>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

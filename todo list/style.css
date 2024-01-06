@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+
+.todo{
+    width: 540px;
+    background-color: gray;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+}
+
+.list{
+    font-size: 20px;
+}
+
+input{
+    height: 35px;
+    width: 77%;
+    margin: 15px;
+    border: none;
+    outline: none;
+    padding: 1px 1px 1px 8px;
+    border-radius: 5px;
+}
+
+.btn{
+    padding: 10.5px 20px;
+    border: none;
+    outline: none;
+    margin-left: -28px;
+    color: white;
+    background-color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(54, 51, 51);
+    cursor: pointer;
+}
+
+p{
+    margin-left: 15px;
+   color: red; 
+}
+
+ul li{
+    background-color: black;
+    list-style: none;
+    width: 83.5%;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 8px 25px 7px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+}
+
+ul li.task{
+    text-decoration: line-through;
+    text-decoration-color: blue;
+}
+
+input[type="checkbox"]{
+    height: 28px;
+    width: 28px;
+}
+
+span{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: red;
+    text-align: center;
+}
+
+span:hover{
+    background-color: rgb(35, 34, 34);
+}

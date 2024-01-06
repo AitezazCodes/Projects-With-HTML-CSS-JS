@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn{
+        padding: 10px 20px;
+        font-family: sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: rgb(69, 69, 219);
+        border: none;
+        border-radius: 3px;
+    }
+
+    #btn:hover{
+        background-color: rgb(56, 56, 224);
+    }
+</style>
+
+<body>
+    <button id="btn">Change</button>
+
+    <script>
+        let index = 0;
+        let change = document.querySelector("#btn");
+        change.addEventListener("click", function(){
+            let arr = ["red", "blue", "purple", "yellow", "green"];
+            document.getElementsByTagName("body")[0].style.background = arr[index++];
+            if(index > arr.length - 1){
+                index = 0;
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.container-light{
+    height: 65vh;
+    width: 25%;
+    border: 2px solid black;
+    position: relative;
+    background-color: white;
+}
+
+.container-dark{
+    height: 65vh;
+    width: 25%;
+    border: 2px solid white;
+    position: relative;
+    background-color: black;
+}
+
+#btn{
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 3px;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    background-color: darkcyan;
+    border: none;
+}
+
+#btn:active{
+    outline: none;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-color: rgb(4, 129, 129);
+}

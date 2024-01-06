@@ -1,0 +1,131 @@
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@500&family=Poppins:wght@300;400;500;600&family=Roboto:wght@500&display=swap');
+
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: rgba(97, 91, 88, 0.2);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: rgba(195, 200, 207, 0.267);
+    height: 75vh;
+    width: 27vw;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 5px 5px rgb(67, 64, 64);
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 6px 6px;
+    border-radius: 3px;
+}
+
+.name, .phone, .email, .message{
+    height: 85px;
+}
+
+span{
+    color: red;
+    font-size: 13px;
+}
+
+i{
+    color: green;
+    float: right;
+    
+    position: relative;
+    bottom: 22px;
+    right: 10px;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 40%;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+.submit{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.pop-up{
+    width: 25%;
+    height: 30vh;
+    background-color: burlywood;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9px;
+    visibility: hidden;
+}
+
+.pop-btn{
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    position: absolute;
+    top: 45%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+}
+
+.pop-btn:hover{
+    background-color: rgb(21, 21, 21);
+}
+
+h3{
+    position: absolute;
+    top: 20%;
+    padding:0  30px;
+    color: green;
+}
+
+
+/* CSS Media Queries */
+@media screen and (max-width: 550px) {
+    form{
+        width: 100%;
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    .container{
+        align-items: flex-start;
+    }
+
+    button{
+        margin-top: 30%;
+    }
+}

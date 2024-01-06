@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@500&family=Poppins:wght@300;400;500;600&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #11141a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+nav a:hover{
+    color: #0ef;
+}
+
+nav a.active {
+    color: #0ef;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f242d;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 700;
+}
+
+section:nth-child(odd){
+    background-color: #323946;
+}
+
+nav .hamburger{
+    color: white;
+    display: none;
+}
+
+nav .cancel{
+    color: white;
+   display: none;
+}
+
+/* ***************** CSS Media Queries ******************** */
+@media only screen and (max-width: 550px){
+
+    header{
+        padding: 20px 15px;
+    }
+    
+    .logo{
+        font-size: 22px;
+    }
+
+    nav a{
+        width: 70%;
+        height: 20vh;
+        background-color: #1f2229;
+        top: 0;
+        float: right;
+        display: none;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0;
+        padding-left: 50px;
+        padding-top: 50px;
+        animation: slip 1s ease;
+    }
+    
+
+    nav .hamburger{
+        display: block;
+        margin: 0;
+        font-size: 24.5px;
+    }
+
+    nav .cancel{
+        position: absolute;
+        top: 3%;
+        right: 5.5%;
+        font-size: 27px;
+    }
+
+    section{
+        font-size: 50px;
+    }
+}
