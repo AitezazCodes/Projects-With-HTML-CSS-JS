@@ -45,7 +45,26 @@ span{
 }
 
 
+/* CSS Media Queries */
+@media only screen and (max-width : 550px) {
+    body{
+        height: 100vh;
+    }
 
+    .for-dec{
+        margin: 0 0.7rem;
+    }
+
+    h1{
+        padding-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .big-text{
+        margin: 15px 0;
+        font-size: 40px;
+    }
+}
 
 
 
