@@ -91,7 +91,7 @@ function checked() {
 function scoreDisplay() {
   QuizApp.style.display = "none";
   let para = document.createElement("h1");
-  para.innerHTML = `Score is ${score}/5`;
+  para.innerHTML = `Score is ${score}/5 <button id="reloadBtn" onclick="location.reload()">Reload</button>`;
   document.body.appendChild(para);
 }
 

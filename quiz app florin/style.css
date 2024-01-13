@@ -25,7 +25,6 @@ body{
 }
 
 h2{
-
     margin: 0;
     padding: 5px;
 }
@@ -69,4 +68,30 @@ label {
 
 #btn:hover{
     background-color: #1b8246;
+}
+
+#reloadBtn{
+    display: block;
+    padding: 12px 20px;
+    margin: 40px auto;
+    border-radius: 3px;
+    border-style: none;
+    outline: none;
+    background-color: rgb(5, 46, 5);
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+
+/* CSS Media Queries */
+@media only screen and (max-width : 550px){
+    #quiz-app{
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
 }
