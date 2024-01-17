@@ -66,4 +66,38 @@ h2, p{
 }
 
 
+/* CSS Media Queries */
+@media only screen and (max-width : 550px){
+    #search{
+        width: 90%;
+        position: absolute;
+        top: 3%;
+        left: 5%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        padding: 10px;
+        margin-top: 100px;
+    }
 
+    .card img{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .follow{
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+    }
+    
+    .follow li{
+        margin-right: 20px;
+        text-align: center;
+    }
+}

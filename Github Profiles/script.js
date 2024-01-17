@@ -53,8 +53,6 @@ function createUserCard(user) {
   main.innerHTML = cardHTML;
 }
 
-
-
 function addReposToCard(repos){
     const reposEl = document.getElementById("repos");
     repos.slice(0, 5).forEach(repo => {
