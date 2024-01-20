@@ -126,6 +126,7 @@ h2{
    }
 
    .search-result{
+    border-bottom: 2rem;
     width: 90%;
     height: 400px;
    }

@@ -15,7 +15,7 @@ Input.focus();  // focus on input when page loads
 async function searchImages(){
     inputData = Input.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${API_URL}`;
-    console.log(url);
+    // console.log(url);
     
     const response = await fetch(url);
     const data = await response.json();
@@ -25,7 +25,7 @@ async function searchImages(){
     }
     
     const Result = data.results;
-    console.log(Result);
+    // console.log(Result);
 
     Array.from(Result).forEach((res) => {
         const searchResult = document.createElement("div");
