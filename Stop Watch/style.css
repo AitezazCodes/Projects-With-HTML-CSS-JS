@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time{
+    padding: 3rem;
+}
+
+.buttons{
+    padding: 3rem;
+}
+
+#hour, #min, #sec{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+#start, #stop, #reset{
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    border-style: none;
+}
+
+#start{
+    background-color: rgb(35, 164, 35);
+    color: white;
+}
+
+#start:hover{
+    background-color: rgb(32, 145, 32);
+}
+
+#start:disabled{
+    background-color: rgb(13, 66, 13);
+    cursor: not-allowed;
+}
+
+#stop{
+    background-color: rgb(243, 180, 99);
+}
+
+#stop:hover{
+    background-color: rgb(247, 171, 72);
+}
+
+#reset{
+    background-color: rgb(246, 99, 21);
+    color: white;
+}
+
+#reset:hover{
+    background-color: rgb(219, 81, 7);
+}
+
+
+/* CSS media Queries */
+@media only screen and (max-width : 550px){
+    .time{
+        padding: 2rem;
+    }
+    
+    .buttons{
+        padding: 2rem;
+    }
+
+    #start, #stop, #reset{
+        font-size: 0.8rem;
+        margin: 0.7rem;
+        padding: 0.7rem 1.3rem;
+    }
+}
