@@ -3,7 +3,7 @@
 }
 
 body{
-    background  : linear-gradient(to right, rgb(52, 42, 63), #444943);
+    background  : black;
     font-family: sans-serif;
 }
 
@@ -46,7 +46,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: blue;
+    color: gray;
     font-size: 1rem;
 
 }
