@@ -10,7 +10,7 @@ for (elem of DragElements) {
             e.preventDefault();
         });
 
-        rightBox.addEventListener("drop", function(e){
+        rightBox.addEventListener("drop", function(){
             rightBox.appendChild(selected);
             selected = null;
         });
@@ -19,7 +19,7 @@ for (elem of DragElements) {
             e.preventDefault();
         });
 
-        leftBox.addEventListener("drop", function(e){
+        leftBox.addEventListener("drop", function(){
             leftBox.appendChild(selected);
             selected = null;
         });
