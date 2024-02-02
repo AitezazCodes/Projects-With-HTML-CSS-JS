@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.count-down{
+    width: 60%;
+    background-color: burlywood;
+    height: 60vh;
+    margin: 0 auto;
+}
+
+.count-down h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.count-down p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    margin: 0 20px;
+    padding: 0.7em 1.1rem;
+    border-style: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* CSS media queries */
+@media only screen and (max-width : 550px){
+    .count-down{
+        width: 90%;
+    }
+}
